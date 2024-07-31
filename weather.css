@@ -1,0 +1,161 @@
+/* importing google font - poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* import google font - roboto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto',sans-serif;
+    font-size: 'poppins',sans-serif;
+}
+
+/* for body */
+body{
+    background-color:rgb(169, 169, 169);
+}
+
+/* for container */
+.container{
+    width: 350px;
+    padding: 20px;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #394166;
+    /* object-fit: contain; */
+}
+
+/* for search-box in container */
+.container .search-box{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* for input in search-box in container */
+.container .search-box input{
+    all: unset;
+    height: 50px;
+    width: 230px;
+    border-bottom: 1px solid white;
+    padding-left: 20px;
+    color:white;
+    font-size: 18px;
+}
+
+/* for search-box placeholder */
+.container .search-box input::placeholder{
+    color:white;
+}
+
+/* for search-btn */
+.container .search-box .search-btn{
+    all: unset;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    color: cadetblue;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* for weather-location */
+.container .weather-location{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 300;
+
+}
+
+/* for weather-img */
+.container .weather-img{
+    height: 130px;
+    width: 130px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* for weather -img img */
+.container .weather-img img{
+    height: 100%;
+    width: 100%;
+}
+
+/* for temp in container */
+.container .temp{
+    text-align: center;
+    margin-top: 115px;
+    color: white;
+    font-size: 30px;
+    font-family: 'roboto',sans-serif;
+
+}
+
+/* for weather-main */
+.container .weather_main_1{
+    text-transform: uppercase;
+    font-size: 37px;
+    text-align: center;
+    margin-top: 6px;
+    color: white;
+    font-weight: 400;
+    font-family: 'roboto',sans-serif;
+
+}
+
+/* for weather-descrip */
+.container .weather-descrip{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 150px;
+    border-radius: 30px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 16px;
+}
+
+/* for other-details */
+.container .other-details{
+    margin-top: 65px;
+
+}
+
+.container .other-details div{
+    height: 60px;
+    width: 103px;
+    /* border: 1px solid red; */
+    float: left;
+    color: white;
+    text-align: center;
+}
+
+.container .other-details div span{
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.container .other-details div p{
+    margin-top: 3px;
+    font-size: 15px;
+}
